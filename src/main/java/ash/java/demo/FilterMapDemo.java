@@ -6,7 +6,7 @@ import java.util.List;
 
 import static java.lang.System.*;
 
-public class FilterMapDemo implements Demoable {
+class FilterMapDemo implements Demoable {
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
 
     private FilterMapDemo() {}

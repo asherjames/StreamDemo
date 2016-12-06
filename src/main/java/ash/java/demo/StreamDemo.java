@@ -9,7 +9,8 @@ public class StreamDemo {
                 MapDemo.create(),
                 FilterDemo.create(),
                 FilterMapDemo.create(),
-                IntStreamDemo.create()
+                IntStreamDemo.create(),
+                LambdaDemo.create()
         ).forEach(Demoable::runDemo);
     }
 }

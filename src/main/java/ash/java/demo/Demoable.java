@@ -1,5 +1,5 @@
 package ash.java.demo;
 
-public interface Demoable {
+interface Demoable {
     void runDemo();
 }
