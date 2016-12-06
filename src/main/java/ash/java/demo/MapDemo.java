@@ -1,6 +1,10 @@
+package ash.java.demo;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static java.lang.System.*;
 
 class MapDemo implements Demoable {
 
@@ -12,11 +16,12 @@ class MapDemo implements Demoable {
         return new MapDemo();
     }
 
+    @Override
     public void runDemo() {
         oldMap();
-        System.out.println();
+        out.println();
         newMap();
-        System.out.println();
+        out.println();
     }
 
     private void oldMap() {
@@ -26,13 +31,13 @@ class MapDemo implements Demoable {
             String a = listCopy.remove(i);
             a += "!";
             listCopy.add(i, a);
-            System.out.print(listCopy.get(i));
+            out.print(listCopy.get(i));
         }
     }
 
     private void newMap() {
         list.stream()
                 .map(s -> s + "!")
-                .forEach(System.out::print);
+                .forEach(out::print);
     }
 }

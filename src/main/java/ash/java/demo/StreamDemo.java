@@ -1,3 +1,5 @@
+package ash.java.demo;
+
 import java.util.stream.Stream;
 
 public class StreamDemo {
@@ -6,7 +8,8 @@ public class StreamDemo {
         Stream.of(
                 MapDemo.create(),
                 FilterDemo.create(),
-                FilterMapDemo.create()
+                FilterMapDemo.create(),
+                IntStreamDemo.create()
         ).forEach(Demoable::runDemo);
     }
 }

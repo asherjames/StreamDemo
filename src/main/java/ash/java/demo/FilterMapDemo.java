@@ -1,6 +1,10 @@
+package ash.java.demo;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static java.lang.System.*;
 
 public class FilterMapDemo implements Demoable {
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
@@ -11,11 +15,12 @@ public class FilterMapDemo implements Demoable {
         return new FilterMapDemo();
     }
 
+    @Override
     public void runDemo() {
         oldMapFilter();
-        System.out.println();
+        out.println();
         newMapFilter();
-        System.out.println();
+        out.println();
     }
 
     private void oldMapFilter() {
@@ -30,7 +35,7 @@ public class FilterMapDemo implements Demoable {
         }
 
         for(String s : listCopy) {
-            System.out.print(s);
+            out.print(s);
         }
     }
 
@@ -38,6 +43,6 @@ public class FilterMapDemo implements Demoable {
         list.stream()
                 .filter(s -> !(s.equals("b") || s.equals("d")))
                 .map(s -> s += "!")
-                .forEach(System.out::print);
+                .forEach(out::print);
     }
 }

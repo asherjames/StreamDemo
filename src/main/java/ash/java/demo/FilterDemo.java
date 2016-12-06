@@ -1,3 +1,5 @@
+package ash.java.demo;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,6 +14,7 @@ class FilterDemo implements Demoable {
         return new FilterDemo();
     }
 
+    @Override
     public void runDemo() {
         oldFilter();
         System.out.println();
