@@ -2,7 +2,7 @@ package ash.java.demo;
 
 import static java.lang.System.*;
 
-public class LambdaDemo implements Demoable {
+class LambdaDemo implements Demoable {
 
     private LambdaDemo() {}
 
@@ -25,9 +25,9 @@ public class LambdaDemo implements Demoable {
         doAdd(addFour);
     }
 
-    private void doAdd(Adder a) {
+    private void doAdd(Adder adder) {
         for(int i = 0; i < 5; i++) {
-            int j = a.add(i);
+            int j = adder.add(i);
             out.println(j);
         }
     }

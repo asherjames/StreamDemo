@@ -3,6 +3,7 @@ package ash.java.demo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 
 import static java.lang.System.*;
 
