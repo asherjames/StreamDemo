@@ -11,7 +11,8 @@ public class StreamDemo {
                 FilterMapDemo.create(),
                 IntStreamDemo.create(),
                 LambdaDemo.create(),
-                CollectDemo.create()
+                CollectDemo.create(),
+                FlatMapDemo.create()
         ).forEach(Demoable::runDemo);
     }
 }

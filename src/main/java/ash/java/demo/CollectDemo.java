@@ -39,8 +39,9 @@ class CollectDemo implements Demoable {
         Map<Integer, String> map = cars.stream()
                 .collect(Collectors.toMap(
                         c -> c.cylinders,
-                        c -> c.make
-                ));
+                        c -> c.make,
+                        (car1, car2) -> car1 + ", " + car2
+                        ));
 
         out.println(map);
     }
