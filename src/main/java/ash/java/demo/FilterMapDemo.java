@@ -10,7 +10,8 @@ import static java.lang.System.*;
 class FilterMapDemo implements Demoable {
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
 
-    private FilterMapDemo() {}
+    private FilterMapDemo() {
+    }
 
     static FilterMapDemo create() {
         return new FilterMapDemo();
@@ -27,15 +28,15 @@ class FilterMapDemo implements Demoable {
     private void oldMapFilter() {
         List<String> listCopy = new ArrayList<>();
 
-        for(int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             String s = list.get(i);
-            if(!(s.equals("b") || s.equals("d"))) {
+            if (!(s.equals("b") || s.equals("d"))) {
                 s += "!";
                 listCopy.add(s);
             }
         }
 
-        for(String s : listCopy) {
+        for (String s : listCopy) {
             out.print(s);
         }
     }

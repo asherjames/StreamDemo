@@ -16,7 +16,8 @@ class CollectDemo implements Demoable {
             new Car("Porsche", 6)
     );
 
-    private CollectDemo(){}
+    private CollectDemo() {
+    }
 
     static CollectDemo create() {
         return new CollectDemo();
@@ -41,7 +42,7 @@ class CollectDemo implements Demoable {
                         c -> c.cylinders,
                         c -> c.make,
                         (car1, car2) -> car1 + ", " + car2
-                        ));
+                ));
 
         out.println(map);
     }
