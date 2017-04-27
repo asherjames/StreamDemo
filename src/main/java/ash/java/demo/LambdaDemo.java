@@ -4,12 +4,6 @@ import static java.lang.System.*;
 
 class LambdaDemo implements Demoable {
 
-    private LambdaDemo() {}
-
-    static LambdaDemo create() {
-        return new LambdaDemo();
-    }
-
     @Override
     public void runDemo() {
         useLambdas();

@@ -10,12 +10,6 @@ class MapDemo implements Demoable {
 
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
 
-    private MapDemo() {}
-
-    static MapDemo create() {
-        return new MapDemo();
-    }
-
     @Override
     public void runDemo() {
         oldMap();

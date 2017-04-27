@@ -16,13 +16,6 @@ class CollectDemo implements Demoable {
             new Car("Porsche", 6)
     );
 
-    private CollectDemo() {
-    }
-
-    static CollectDemo create() {
-        return new CollectDemo();
-    }
-
     @Override
     public void runDemo() {
         findAverageCylinders();

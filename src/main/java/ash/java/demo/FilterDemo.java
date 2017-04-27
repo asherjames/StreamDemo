@@ -8,12 +8,6 @@ class FilterDemo implements Demoable {
 
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
 
-    private FilterDemo() {}
-
-    static FilterDemo create() {
-        return new FilterDemo();
-    }
-
     @Override
     public void runDemo() {
         oldFilter();

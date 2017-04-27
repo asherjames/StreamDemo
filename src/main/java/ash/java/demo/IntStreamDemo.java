@@ -6,12 +6,6 @@ import static java.lang.System.*;
 
 class IntStreamDemo implements Demoable {
 
-    private IntStreamDemo() {}
-
-    static IntStreamDemo create() {
-        return new IntStreamDemo();
-    }
-
     @Override
     public void runDemo() {
         simpleIntStream();

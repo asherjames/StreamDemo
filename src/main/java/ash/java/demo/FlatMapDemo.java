@@ -16,10 +16,6 @@ class FlatMapDemo implements Demoable {
         flatten();
     }
 
-    private FlatMapDemo(){}
-
-    static FlatMapDemo create() { return new FlatMapDemo(); }
-
     private void populateList() {
         IntStream
                 .range(1, 5)

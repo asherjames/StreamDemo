@@ -10,13 +10,6 @@ import static java.lang.System.*;
 class FilterMapDemo implements Demoable {
     private List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));
 
-    private FilterMapDemo() {
-    }
-
-    static FilterMapDemo create() {
-        return new FilterMapDemo();
-    }
-
     @Override
     public void runDemo() {
         oldMapFilter();

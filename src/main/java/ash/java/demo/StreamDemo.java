@@ -6,14 +6,14 @@ public class StreamDemo {
 
     public static void main(String[] args) {
         Stream.of(
-                MapDemo.create(),
-                FilterDemo.create(),
-                FilterMapDemo.create(),
-                IntStreamDemo.create(),
-                LambdaDemo.create(),
-                CollectDemo.create(),
-                FlatMapDemo.create(),
-                ReduceDemo.create()
+                new MapDemo(),
+                new FilterDemo(),
+                new FilterMapDemo(),
+                new IntStreamDemo(),
+                new LambdaDemo(),
+                new CollectDemo(),
+                new FlatMapDemo(),
+                new ReduceDemo()
         ).forEach(Demoable::runDemo);
     }
 }

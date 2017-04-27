@@ -5,20 +5,13 @@ import java.util.List;
 
 import static java.lang.System.*;
 
-public class ReduceDemo implements Demoable {
+class ReduceDemo implements Demoable {
 
     private List<Bike> bikes = Arrays.asList(
             new Bike("Ducati", 996),
             new Bike("Honda", 599),
             new Bike("Vespa", 200)
     );
-
-    private ReduceDemo() {
-    }
-
-    static ReduceDemo create() {
-        return new ReduceDemo();
-    }
 
     @Override
     public void runDemo() {
